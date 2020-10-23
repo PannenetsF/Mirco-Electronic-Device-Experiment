@@ -1,6 +1,0 @@
-\contentsline {section}{\numberline {1}实验目的}{1}{section.1}%
-\contentsline {section}{\numberline {2}实验所用设备及器件}{1}{section.2}%
-\contentsline {section}{\numberline {3}实验基本原理及步骤}{1}{section.3}%
-\contentsline {section}{\numberline {4}实验数据记录}{1}{section.4}%
-\contentsline {section}{\numberline {5}实验结果分析}{1}{section.5}%
-\contentsline {section}{\numberline {6}总结与思考}{1}{section.6}%

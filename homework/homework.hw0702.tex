@@ -2,7 +2,7 @@
 
 \input{needed.tex}
 
-\title{微电子器件实验\quad xxxxxxxx}
+\title{微电子器件实验\quad 双极型晶体管的直流特性测量与分析}
 \author{范云潜， 学号：18373486，搭档：徐靖涵，教师：彭守仲}
 \institute{微电子学院 184111 班}
 \date{\zhdate{2020/10/19}}
@@ -11,33 +11,57 @@
 
 \maketitle
 
-% \begin{table*}[h]
-%     % \caption{等效输入}
-%     \centering
-%     \label{tab:my-tabletab:my-table}
-%     \begin{tabular}{|c|c|c|c|c|c|}
-%     \hline
-%     学生姓名 & 范云潜       & 学号       & 18373486      & 班级   & \multicolumn{1}{l|}{184111} \\ \hline
-%     实验日期 & \multicolumn{3}{l|}{2020年 10 月 19 日} & 搭档姓名 & 徐靖涵                         \\ \hline
-%     课程名称 & \multicolumn{3}{c|}{微电子器件实验}         & 教师姓名 & 彭守仲                         \\ \hline
-%     实验名称 & \multicolumn{5}{c|}{}                                                     \\ \hline
-%     \end{tabular}
-% \end{table*}
-
 % \tableofcontents
 
 \section{实验目的}
 
+双极型晶体管的直流特性测量与分析，并从中：
+
+\begin{itemize}
+    \item 了解通用仪表的的基本原理和使用方法
+    \item 了解被测器件各项参数的定义和测量方法
+    \item 掌握被测器件直流特性和相关机理
+\end{itemize}
+
 \section{实验所用设备及器件}
+
+实验用到的核心器件是双极型晶体管 9018 ，其他设备包括面包板、杜邦线、电压源、手持万用表、台式万用表等。
 
 \section{实验基本原理及步骤}
 
+基本原理是三极管的两个 PN 结的特性，因此基极电流基本和二极管一致，而 \(V_{CE}\) 的变化可以使得同等的基极电压下电流增大。
+
+\begin{enumerate}
+    \item 搭建电路，电路图如\figref{01}
+    \item 设 \(V_{CE} = 0\) ，调节 \(V_B\) ，记录电压 \(V_{BE}\) 以及电流 \(I_B\) 。
+    \item 设 \(V_{CE} = 0.5 V\) ，调节 \(V_B\) ，记录电压 \(V_{BE}\) 以及电流 \(I_B\) 。
+    \item 拆解电路，还原仪器
+\end{enumerate}
+
+\qfig[01]{0702p1.png}{三极管测试电路}
+
 \section{实验数据记录}
+
+原始数据可视化后如\figref{02}，\figref{03} ，原始数据请见 \href{https://github.com/PannenetsF/Mirco-Electronic-Device-Experiment/tree/main/homework/hw07/01led}{这里} 。
+
+\qfig[02]{0702p2.png}{\(V_{CE} = 0 V\) 时 \(I-V_{B}\) 曲线}
+
+\qfig[03]{0702p3.png}{\(V_{CE} = 0.5 V\) 时 \(I-V_{B}\) 曲线}
 
 \section{实验结果分析}
 
+三极管中的 PN 结表现出类似二极管的伏安特性，和理论相符：在正向导通时，电流随电压成指数变化，较小电压变化会引起较大的电流变化；反向导通且未击穿时，较大的电压变化引起的电流增大较小。在集电极偏置变大后，漂移电流增大，导致发射极的电流得到进一步放大。
+
 \section{总结与思考}
 
+Q：VCE电压是如何影响BE端的伏安特性曲线的？内在机理是什么？
+
+放大的原理：
+发射区重掺杂、发射结正偏，大量电子从发射区扩散到基区。
+基区很薄、多子浓度低，所以极少数从发射区扩散来的电子与基区的空穴复合。
+集电区面积大、基区很薄、集电结反偏，那么大部分从发射区扩散来的电子能漂移到集电区，阻碍很小。
+
+在这种情况下， \(V_{CE}\) 的增大会增大集电区的漂移，进而使得电流增大。
 % Start Here
 
 % End Here
