@@ -2,7 +2,7 @@
 
 \input{needed.tex}
 
-\title{微电子器件实验\quad MOS 管D}
+\title{微电子器件实验\quad MOS 管直流特性}
 \author{范云潜， 学号：18373486，搭档：徐靖涵，教师：彭守仲}
 \institute{微电子学院 184111 班}
 \date{\zhdate{2020/10/19}}
@@ -52,10 +52,10 @@ NMOS 的基本结构如 \figref{01} ，一个低掺杂的P型硅片为衬底，�
 \subsubsection{实验一：IRF3205 源漏伏安特性曲线}
 
 \begin{enumerate}
-    \item 将元器件连接到面包板，尽量减少杜邦线的使用。电路如 \figref{04} 。
-    \item 连线完成后打开 \(E_D\) 测试仪表是否工作正常。
+    \item 将元器件连接到面包板，尽量减少杜邦线的使用。电路如 \figref{04} 
+    \item 连线完成后打开 \(E_D\) 测试仪表是否工作正常
     \item 调节 \(E_D\) 为 \(0-1.5 V\) 
-    \item 测量对应的 \(V_{DS}\) 和  \(I_D\) 并绘图。
+    \item 测量对应的 \(V_{DS}\) 和  \(I_D\) 并绘图
 \end{enumerate}
 
 \qfig[04]{09p4.png}{实验一电路}
@@ -65,26 +65,111 @@ NMOS 的基本结构如 \figref{01} ，一个低掺杂的P型硅片为衬底，�
 
 \begin{enumerate}
     \item 将元器件连接到面包板，尽量减少杜邦线的使用。电路如 \figref{05} 。
-    \item 连线完成后打开 \(E_D\) 和 \(E_G\) 测试仪表是否工作正常。
+    \item 连线完成后打开 \(E_D\) 和 \(E_G\) 测试仪表是否工作正常
     \item 调节 \(E_D\) 为 \(0.5, 1, 1.5 V\) 
     \item 分别将 \(E_G\) 在 \(0.1 - 7 V\) 取值
-    \item 测量对应的 \(V_{GS}\) 和  \(I_D\) 并绘图。
+    \item 测量对应的 \(V_{GS}\) 和  \(I_D\) 并绘图
 \end{enumerate}
 
 \qfig[05]{09p5.png}{实验二电路}
 
 \subsubsection{实验三：IRFR214 转移特性曲线}
 
+\begin{enumerate}
+    \item 将元器件连接到面包板，尽量减少杜邦线的使用。电路如 \figref{06} 。
+    \item 连线完成后打开 \(E_D\) 和 \(E_G\) 测试仪表是否工作正常
+    \item 调节 \(E_D\) 为 \(1.0 V\) 
+    \item 分别将 \(E_G\) 在 \(0.1 - 10 V\) 取值
+    \item 测量对应的 \(V_{GS}\) 和  \(I_D\) 并绘图
+\end{enumerate}
+
+\qfig[06]{09p6.png}{实验三电路}
+
+
 \subsubsection{实验四：IRFR214 输出特性曲线}
+
+
+\begin{enumerate}
+    \item 将元器件连接到面包板，尽量减少杜邦线的使用。电路如 \figref{07} 。
+    \item 连线完成后打开 \(E_D\) 和 \(E_G\) 测试仪表是否工作正常
+    \item 调节 \(E_G\) 为 \(3.3, 3.5, 3.7 V\) 
+    \item 分别将 \(E_D\) 在 \(0.1 - 2 V\) 取值
+    \item 测量对应的 \(V_{DS}\) 和  \(I_D\) 并绘图
+\end{enumerate}
+
+\qfig[07]{09p6.png}{实验四电路}
 
 \section{实验数据记录}
 
+原始数据请见 \href{https://github.com/PannenetsF/Mirco-Electronic-Device-Experiment/tree/main/homework/hw09}{这里} 。
+
+\subsection{实验一}
+
+IRF3205 源漏伏安特性曲线如\figref{08} 。
+
+
+\qfig[08]{09p7.png}{IRF3205 源漏伏安特性曲线}
+
+
+\subsection{实验二}
+
+IRF3205 转移特性曲线如\figref{09} 。
+
+
+\qfig[09]{09p8.png}{IRF3205 转移特性曲线}
+
+
+\subsection{实验三}
+
+IRFR214 转移特性曲线如\figref{10} 。
+
+
+\qfig[10]{09p9.png}{IRFR214 转移特性曲线}
+
+
+\subsection{实验四}
+
+IRF3205 源漏伏安特性曲线如\figref{11} 。
+
+
+\qfig[11]{09p10.png}{IRFR214 输出特性曲线}
+
+
 \section{实验结果分析}
+
+\subsection{实验一} 
+
+在未外加栅源电压时，源漏之间可以看作是一个二极管，因此存在一个阈值以及相似的电流特性。从 \figref{08} 可以看出，阈值约为 \(0.6V\) 并且满足指数上升的特点。
+
+\subsection{实验二}\label{sec1}
+
+在 \(V_{GS}\) 较小时，器件处于截止状态，因此电流较小，不同的 \(V_D\) 对电流影响较小；稍大的 \(V_{GS}\) 使得器件工作在饱和状态， \(V_{GS}\) 对电流的影响是二次的，不同 \(V_{DS}\) 在可变电阻区的影响体现在饱和区的入口，也就是为什么同一 \(V_{GS}\) 下电流的大小不同；进一步增大，由于栅极电压过高，管子工作在线性区，\(V_{GS}\) 对电流的影响较小，因此很小的电流变化就涵盖了较大的 \(V_{GS}\) 区域。
+
+\subsection{实验三}
+
+同 \ref{sec1} 。
+
+\subsection{实验四}
+
+在 \(E_D\) 较小时，电路处在线性区，电流较小； \(E_D\) 增大时，逐渐进入线性区，电流迅速上升；继续增大，进入饱和区，电流几乎保持不变。较小的栅极偏置差距下，电流差距变化迅速，体现了平方增长的特点。
 
 \section{总结与思考}
 
 转移特性曲线变平的原因：此时由于栅极电压过高，管子工作在线性区，\(V_{GS}\) 对电流的影响较小，因此很小的电流变化就涵盖了较大的 \(V_{GS}\) 区域。
 
+Q1. 请列举场效应管与双极型晶体管的几个不同点
+
+\begin{itemize}
+    \item MOS 是压控器件，BJT 是流控器件，因此 MOS 的功耗更低
+    \item MOS 仅有多子参与导电， BJT 多子少子均参与，因此MOS 的温度性更好
+    \item MOS 集成性好
+\end{itemize}
+
+Q2. 请根据转移特性曲线图画出输出特性曲线中的恒流区曲线示意图。
+
+如 \figref{ans} 。
+
+\qfig[ans]{09p11.png}{恒流区曲线}
 
 
 % Start Here

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.9)  5 NOV 2020 23:26
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.9)  6 NOV 2020 16:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -825,22 +825,51 @@ File: figure/09p2.png Graphic file (type bmp)
 <figure/09p2.png>
 File: figure/09p3.png Graphic file (type bmp)
 <figure/09p3.png>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
- [2] [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+ [2]
+File: figure/09p4.png Graphic file (type bmp)
+<figure/09p4.png>
+File: figure/09p5.png Graphic file (type bmp)
+<figure/09p5.png>
+File: figure/09p6.png Graphic file (type bmp)
+<figure/09p6.png>
+ [3]
+File: figure/09p6.png Graphic file (type bmp)
+<figure/09p6.png>
+File: figure/09p7.png Graphic file (type bmp)
+<figure/09p7.png>
+ [4]
+File: figure/09p8.png Graphic file (type bmp)
+<figure/09p8.png>
+File: figure/09p9.png Graphic file (type bmp)
+<figure/09p9.png>
+File: figure/09p10.png Graphic file (type bmp)
+<figure/09p10.png>
+ [5] [6]
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 163.
+ (/opt/texlive2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 163.
+ [7]
+File: figure/09p11.png Graphic file (type bmp)
+<figure/09p11.png>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
  (./homework.week09.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 74.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `homework.week09.out' has not changed.
-(rerunfilecheck)             Checksum: CAD2B8CC110666BEE14E076FE496610F;1676.
+(rerunfilecheck)             Checksum: EA8596D580AB170FF31747B8FBDCF9B1;2332.
  ) 
 Here is how much of TeX's memory you used:
- 21197 strings out of 479682
- 410310 string characters out of 5891585
+ 21292 strings out of 479682
+ 411740 string characters out of 5891585
  959420 words of memory out of 5000000
- 38096 multiletter control sequences out of 15000+600000
- 571099 words of font info for 86 fonts, out of 8000000 for 9000
+ 38179 multiletter control sequences out of 15000+600000
+ 571475 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  69i,6n,126p,846b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework.week09.pdf (3 pages).
+Output written on homework.week09.pdf (8 pages).
