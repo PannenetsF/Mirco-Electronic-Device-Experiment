@@ -147,7 +147,7 @@ load   & vout     & vin      & iin      \\ \hline
     R_{in} &=   35643 \Omega\\
     R_{out} &= \ = 14.286 \Omega  \\
     A_v &= 0.986 \\
-    A_i &= 52.238
+    A_i &= 52.238 
 \end{aligned}\]
 
 可以看到，输入电阻较大，输出电阻较小，几乎不放大电压，而是放大电流。
@@ -173,23 +173,23 @@ Q1：
 在共集极电路中，如 \figref{01} ， 
 
 \[\begin{aligned}
-    R_{in} &=  \frac{r_\pi + (1+\beta)R_e}{1 + (r_\pi + (\beta + 1) R_e) / R_b}  = \frac{870 + 105 \times 1000}{1 + (870 + 105 \times 1000) / 1000} = \\
-    R_{out} &= R_e // r_\pi // (r_\pi / \beta) \\ 
-    A_v &= \frac{(1+\beta) R_e}{r_\pi + (\beta + 1) R_e} = \\
-    A_i &= \frac{(1+\beta) R_b}{1 + (r_\pi + (1+\beta) R_e)} = 
+    R_{in} &=  \frac{r_\pi + (1+\beta)R_e}{1 + (r_\pi + (\beta + 1) R_e) / R_b}  = \frac{870 + 105 \times 1000}{1 + (870 + 105 \times 1000) / 1000} = 51425.65697 \Omega\\
+    R_{out} &= R_e // r_\pi // (r_\pi / \beta) = 7.8 \Omega\\ 
+    A_v &= \frac{(1+\beta) R_e}{r_\pi + (\beta + 1) R_e} = 0.99178 \\
+    A_i &= \frac{1}{2}\frac{(1+\beta) R_b}{1 + (r_\pi + (1+\beta) R_e)} = 49.589
 \end{aligned}\]
 
 
 在共基极电路中，如 \figref{02} ， 
 
 \[\begin{aligned}
-    R_{in} &= R_e // r_\pi // (r_\pi / \beta) \\
-    R_{out} &= R_e \\ 
-    A_v &= \frac{\beta R_c}{r_\pi}\\ 
-    A_i &= \frac{\beta}{\beta + 1 + r_\pi / R_e} 
+    R_{in} &= R_e // r_\pi // (r_\pi / \beta) = 7.8 \Omega\\
+    R_{out} &= R_e = 1000 \Omega \\ 
+    A_v &= \frac{\beta R_c}{r_\pi}= 120.69 \\ 
+    A_i &= \frac{1}{2}\frac{\beta}{\beta + 1 + r_\pi / R_e}  = 0.49125
 \end{aligned}\]
 
-
+Q2： 共集极电路输入电阻很大，可以接受前一级的大部分电压，输出电阻很小，可以给出大部分输出电压，几乎不放大电压但是放大电流，作为缓冲器增强驱动能力。共基极电路输入电阻很小，接受大部分电流，但是输出电阻很大，输出大部分电压，有电压放大作用，几乎不放大电流，可以做放大器。
 
 % Start Here
 
