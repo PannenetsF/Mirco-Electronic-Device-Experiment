@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.9)  12 DEC 2020 10:30
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.9)  16 DEC 2020 23:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/pannenetsf/Documents/Subjects/me/homework/homework.week14
-(/home/pannenetsf/Documents/Subjects/me/homework/homework.week14.tex
+**/home/pannenetsf/Documents/Subjects/me/homework/homework.week15
+(/home/pannenetsf/Documents/Subjects/me/homework/homework.week15.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-09-06> (/opt/texlive2020/texmf-dist/tex/latex/elegantpaper/elegantpaper.cls
 Document Class: elegantpaper 2020/04/12 v0.09 ElegantLaTeX Paper class
@@ -678,8 +678,8 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 ) (/opt/texlive2020/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)) (./needed.tex) (./homework.week14.aux)
-\openout1 = `homework.week14.aux'.
+)) (./needed.tex) (./homework.week15.aux)
+\openout1 = `homework.week15.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -715,9 +715,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 10.
 LaTeX Info: Redefining \pageref on input line 10.
 LaTeX Info: Redefining \nameref on input line 10.
- (./homework.week14.out) (./homework.week14.out)
+ (./homework.week15.out) (./homework.week15.out)
 \@outlinefile=\write4
-\openout4 = `homework.week14.out'.
+\openout4 = `homework.week15.out'.
 
 
 *geometry* driver: auto-detecting
@@ -811,63 +811,56 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 16.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 26.
+(Font)              scaled to size 12.0pt on input line 27.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 28.
-File: figure/1401.png Graphic file (type bmp)
-<figure/1401.png>
+(Font)              scaled to size 10.95pt on input line 29.
+File: figure/1501.png Graphic file (type bmp)
+<figure/1501.png>
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 34.
+(Font)              scaled to size 10.0pt on input line 31.
 [1
 
 ]
-File: figure/1402.png Graphic file (type bmp)
-<figure/1402.png>
+File: figure/1502.png Graphic file (type bmp)
+<figure/1502.png>
+LaTeX Font Info:    Trying to load font information for T1+ntxsups on input line 45.
+ (/opt/texlive2020/texmf-dist/tex/latex/newtx/t1ntxsups.fd
+File: t1ntxsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
+(Font)              scaled to size 10.95pt on input line 45.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.0pt on input line 45.
+LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
+(Font)              scaled to size 9.0pt on input line 45.
+File: figure/1503.png Graphic file (type bmp)
+<figure/1503.png>
+File: figure/1504.png Graphic file (type bmp)
+<figure/1504.png>
  [2]
-File: figure/1403.png Graphic file (type bmp)
-<figure/1403.png>
-File: figure/1404.png Graphic file (type bmp)
-<figure/1404.png>
-File: figure/1405.png Graphic file (type bmp)
-<figure/1405.png>
-File: figure/1406.png Graphic file (type bmp)
-<figure/1406.png>
-File: figure/1407.png Graphic file (type bmp)
-<figure/1407.png>
-File: figure/1408.png Graphic file (type bmp)
-<figure/1408.png>
-File: figure/1409.png Graphic file (type bmp)
-<figure/1409.png>
-File: figure/1410.png Graphic file (type bmp)
-<figure/1410.png>
- [3]
-
-LaTeX Warning: Text page 4 contains only floats.
-
-[4]
-File: figure/1411.jpg Graphic file (type bmp)
-<figure/1411.jpg>
-File: figure/1412.jpg Graphic file (type bmp)
-<figure/1412.jpg>
-File: figure/1413.jpg Graphic file (type bmp)
-<figure/1413.jpg>
+File: figure/1505.png Graphic file (type bmp)
+<figure/1505.png>
+File: figure/1506.png Graphic file (type bmp)
+<figure/1506.png>
+ [3] [4]
+File: figure/1507.png Graphic file (type bmp)
+<figure/1507.png>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
  [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
- [6] [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
- (./homework.week14.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
-Package rerunfilecheck Info: File `homework.week14.out' has not changed.
-(rerunfilecheck)             Checksum: 782E37C99A3597731B94269A0B43AC9F;869.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+ (./homework.week15.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 131.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
+Package rerunfilecheck Info: File `homework.week15.out' has not changed.
+(rerunfilecheck)             Checksum: 7A6127EC77E81FD669936DC281341A8D;1293.
  ) 
 Here is how much of TeX's memory you used:
- 21241 strings out of 479682
- 408914 string characters out of 5891585
- 956420 words of memory out of 5000000
- 38129 multiletter control sequences out of 15000+600000
- 571099 words of font info for 86 fonts, out of 8000000 for 9000
+ 21314 strings out of 479682
+ 414777 string characters out of 5891585
+ 955420 words of memory out of 5000000
+ 38201 multiletter control sequences out of 15000+600000
+ 576917 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 69i,8n,126p,846b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,6n,126p,846b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework.week14.pdf (7 pages).
+Output written on homework.week15.pdf (5 pages).
