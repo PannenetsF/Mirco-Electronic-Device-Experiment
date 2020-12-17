@@ -34,7 +34,7 @@
 
 类似的，为了拼凑微分电路，需要将输入进行微分，而非输出，只需将积分电路的负端与输出端的电容、电阻交换位置即可：
 
-\[v_o =  - R_f C \frac{\dd{v_i}}{\dd{t}}\]
+\[v_o =  - R_f C \dfrac{\dd{v_i}}{\dd{t}}\]
 
 选择 \(R = 100k \Omega, C = 10 \mu F\) ，如 \figref{02} 。
 
@@ -48,7 +48,7 @@
 
 此时的电学关系满足：
 
-\[v_o = - R I_s \exp \frac{v_i}{u_t} \]
+\[v_o = - R I_s \exp \dfrac{v_i}{u_t} \]
 
 \subsection{对数运算电路}
 
@@ -58,11 +58,11 @@
 
 此时满足的电学关系为：
 
-\[I_s \exp \frac{0 - v_o}{u_t} = \frac{v_i}{R} \]
+\[I_s \exp \dfrac{0 - v_o}{u_t} = \dfrac{v_i}{R} \]
 
 整理得到：
 
-\[v_o = - u_t \ln \frac{v_i}{I_s R}\]
+\[v_o = - u_t \ln \dfrac{v_i}{I_s R}\]
 
 \subsection{实验步骤}
 
@@ -74,6 +74,8 @@
 
 原始数据请见 \href{https://github.com/PannenetsF/Mirco-Electronic-Device-Experiment/tree/main/homework/hw15}{这里} 。
 
+其中差分、微分电路已经经过课堂检查。
+
 需要注意的是，本小节的拟合图像均将输入放大了 \(1e6\) 倍。
 
 \subsection{指数运算电路}
@@ -81,7 +83,6 @@
 将其输入与输出进行了指数拟合，如\figref{05}。对比上一小节推导的公式，得到 \(I_s = 13.9 nA\) ， \(u_t = 53.856 mV\) 。
 
 \qfig[05]{1505.png}{指数运算电路拟合结果}
-
 
 \subsection{对数运算电路}
 
@@ -101,15 +102,15 @@ Q1. 任意波形发生器的内阻与微分电路中的电容组成一个什么
 
 其电路如 \figref{07} 。满足：
 
-\[A_v = \frac{1/sC}{1/sC + R} = \frac{1}{1 + s C R}\] 
+\[A_v = \dfrac{1/sC}{1/sC + R} = \dfrac{1}{1 + s C R}\] 
 
 那么：
 
-\[|A_v| = \frac{1}{\sqrt{1 + \omega^2 C^2 R^2}} = \frac{1}{\sqrt{2}}\]
+\[|A_v| = \dfrac{1}{\sqrt{1 + \omega^2 C^2 R^2}} = \dfrac{1}{\sqrt{2}}\]
 
 解得：
 
-\[\omega = \frac{1}{RC} = \frac{1}{500 \mu} = 2000\] 
+\[\omega = \dfrac{1}{RC} = \dfrac{1}{500 \mu} = 2000\] 
 
 约为 \(320 Hz\) 。
 
@@ -117,11 +118,14 @@ Q1. 任意波形发生器的内阻与微分电路中的电容组成一个什么
 
 Q2. 方波信号经过低通滤波后得到什么样的波形？为什么？
 
-应该是类似 \(\mathit{sa}\) 函数构成的梯形的形状。方波的频域表示为 \(\mathit{sa}\) 函数，低通滤波器（类似方波）将其主要幅度特性留下，恢复出一个缺少高频低幅度的“方波”。
+应该是类似 \(\mathit{sa}\) 函数构成的梯形的形状。方波的频域表示为 \(\mathit{sa}\) 函数，低通滤波器（类似方波）将其主要幅度特性留下，恢复出一个缺少高频低幅度的“方波”。如 \figref{08} 。
+
+\qfig[08]{1508.png}{经过滤波的方波形状}
 
 Q3. 输入电压在什么范围内时指数运算和对数运算电路能够正
 常工作？
 
+输入电压的范围需要保证输出电压范围在供电电压内，不如假定其负端电压为 \(-V_{-}\)。对于指数运算电路，最大输入电压为 \(u_t \ln \dfrac{v_o}{R I_s}\) ，对于对数运算电路，最大输入电压为 \(I_s R \exp \dfrac{v_o}{u_t}\) 。
 
 
 % Start Here
