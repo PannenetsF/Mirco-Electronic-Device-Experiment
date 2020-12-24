@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.20)  23 DEC 2020 22:46
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.20)  24 DEC 2020 09:06
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -978,29 +978,44 @@ LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
 (Font)              scaled to size 9.0pt on input line 59.
 File: figure//1603.png Graphic file (type bmp)
 <figure//1603.png>
- [2]
+ [2] [3]
 File: figure//1604.png Graphic file (type bmp)
 <figure//1604.png>
- [3]
 File: figure//1605.png Graphic file (type bmp)
 <figure//1605.png>
- [4] [5] (./homework.week16.aux)
+File: figure//1606.png Graphic file (type bmp)
+<figure//1606.png>
+ [4]
+File: figure//1607.jpg Graphic file (type bmp)
+<figure//1607.jpg>
+File: figure//1608.jpg Graphic file (type bmp)
+<figure//1608.jpg>
+File: figure//1609.jpg Graphic file (type bmp)
+<figure//1609.jpg>
+ [5]
 
-Package rerunfilecheck Warning: File `homework.week16.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Reference `10' on page 6 undefined on input line 164.
 
-Package rerunfilecheck Info: Checksums for `homework.week16.out':
-(rerunfilecheck)             Before: C30A86E4C83495ADEF30662F3555A732;989
-(rerunfilecheck)             After:  17A737F5A6F8560516E8EA4C6387C2C7;1097.
+File: figure//1610.jpg Graphic file (type bmp)
+<figure//1610.jpg>
+[6] [7] (./homework.week16.aux)
+Package rerunfilecheck Info: File `homework.week16.out' has not changed.
+(rerunfilecheck)             Checksum: 53559842F2D7D6FF337357F3318AC5F4;1941.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 21277 strings out of 477298
- 410682 string characters out of 5835645
+ 21314 strings out of 477298
+ 411217 string characters out of 5835645
  1001715 words of memory out of 5000000
- 40535 multiletter control sequences out of 15000+600000
+ 40566 multiletter control sequences out of 15000+600000
  448694 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,10n,135p,442b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework.week16.pdf (5 pages).
+Output written on homework.week16.pdf (7 pages).

@@ -71,6 +71,19 @@
 
 \qfig[03]{1603.png}{滞回比较器电路结构}
 
+将 \figref{03} 中的接地转换为 \(U_{ref}\) 即可得到带参考电压的滞回比较器，类似的：
+
+\[
+\begin{aligned}
+    u_i \text{ 从低转向高：} & u_{-} = u_{i+} = u_{+} = \dfrac{R_1}{R_1 + R_2} U_{OH} + \dfrac{R_2}{R_1 + R_2} U_{ref}\\  
+    & u_{i+} = U_{T+} = \dfrac{R_1}{R_1 + R_2} U_{OH}  + \dfrac{R_2}{R_1 + R_2} U_{ref}\\ 
+    u_i \text{ 从高转向低：} &  u_{-} = u_{i-} = u_{+} = \dfrac{R_1}{R_1 + R_2} U_{OL} + \dfrac{R_2}{R_1 + R_2} U_{ref}\\ 
+    & u_{i-} = U_{T-} = \dfrac{R_1}{R_1 + R_2} U_{OL}  + \dfrac{R_2}{R_1 + R_2} U_{ref}\\ 
+    & \text{ 其中，} U_{OL} \text{ 和 } U_{OH} \text{为系统的输出电压，与电源电压并不一致。}
+\end{aligned}    
+\]
+
+
 \subsection{波形发生器}
 
 典型的用于生成波形的结构或器件有 RC 振荡电路、 LC 振荡电路与石英晶振等。本次实验使用到的 RC 振荡电路基于正反馈。
@@ -123,9 +136,31 @@
 
 \qfig[06]{1606.png}{滞回比较器}
 
-\subsubsection{积分电路}
+\subsubsection{积分电路} 
+
+基本原理在前序实验中有详细介绍，但是需要注意，若是 \(R C\) 常数越大，积分数值就会越小，对应的噪声越大。
 
 \section{实验数据记录}
+
+\subsection{过零比较器}
+
+如 \figref{07} 。
+
+\qfig[07]{1607.jpg}{过零比较器波形}
+
+\subsection{单限比较器}
+
+
+
+\subsection{滞回比较器}
+
+\subsection{带参考电压的滞回比较器}
+
+\subsection{RC 正弦发生器}
+
+\subsection{方波转换}
+
+\subsection{三角波转换}
 
 \section{实验结果分析}
 
