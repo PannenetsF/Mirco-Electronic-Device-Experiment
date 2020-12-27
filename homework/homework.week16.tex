@@ -140,6 +140,66 @@
 
 基本原理在前序实验中有详细介绍，但是需要注意，若是 \(R C\) 常数越大，积分数值就会越小，对应的噪声越大。
 
+\subsection{实验步骤}
+
+\subsubsection{过零比较器}
+
+\begin{itemize}
+    \item 按照\figref{01}搭建电路，设置电源电压为 \(\pm 5 V\)，设置三角波为输入，幅值、频率可较为自由选择
+    \item 示波器两通道分别连接 \(u_i\) 和 \(u_o\) ，观察波形
+    \item 根据输出峰峰值调节运放供电，直到输出峰峰值为 \(10 V\)
+\end{itemize}
+
+
+\subsubsection{单限比较器}
+
+\begin{itemize}
+    \item 按照\figref{02}搭建电路，设置电源电压为 \(\pm 5 V\)，设置三角波为输入，幅值、频率可较为自由选择
+    \item 示波器两通道分别连接 \(u_i\) 和 \(u_o\) ，观察波形
+    \item 根据输出峰峰值调节运放供电，直到输出峰峰值为 \(10 V\)
+\end{itemize}
+
+
+\subsubsection{滞回比较器}
+
+\begin{itemize}
+    \item 按照\figref{03}搭建电路，设置电源电压为 \(\pm 5 V\)，设置三角波为输入，峰峰值设为 \(10 V\)、频率可较为自由选择
+    \item 示波器两通道分别连接 \(u_i\) 和 \(u_o\) ，观察波形
+    \item 由于滞回特性严格依赖于输出电压 \(U_{OH}\) 和 \(U_{OL}\) ，因此根据输出峰峰值调节运放供电，直到输出峰峰值为 \(10 V\)
+\end{itemize}
+
+
+\subsubsection{正弦信号发生器}
+
+\begin{itemize}
+    \item 按照\figref{05}搭建电路，设置电源电压为 \(\pm 10 V\)，设置可变电阻在 \(230 \Omega\) 左右
+    \item 由于电路环路起振需要，微微调节可变电阻，引入系统噪声
+    \item 示波器两通道分别连接 \(u_i\) 和 \(u_o\) ，观察波形
+\end{itemize}
+
+
+\subsubsection{正弦波-方波转换}
+
+本质是一个滞回比较器，如\figref{06}，需要注意的是，稳压二极管的存在将反馈回输入端的电压固定了，对 \(U_{OH}\) 和 \(U_{OL}\) 敏感度下降。
+
+\begin{itemize}
+    \item 按照\figref{06}搭建电路，设置电源电压为 \(\pm 10 V\)
+    \item 示波器两通道分别连接 \(u_i\) 和 \(u_o\) ，观察波形
+\end{itemize}
+
+\subsubsection{方波-三角波转换}
+
+本质是一个积分电路，如\figref{14} 。
+
+\begin{itemize}
+    \item 按照\figref{14}搭建电路，设置电源电压为 \(\pm 10 V\)
+    \item 示波器两通道分别连接 \(u_i\) 和 \(u_o\) ，观察波形
+    \item 但是由于积分后，信号可能回超过运放供电，因此需要适当将供电电压调高（最高电压差为 \(33V\)），而这对之前两个电路影响较小
+\end{itemize}
+
+\qfig[14]{1614.png}{积分电路结构}
+
+
 \section{实验数据记录}
 
 \subsection{过零比较器}
