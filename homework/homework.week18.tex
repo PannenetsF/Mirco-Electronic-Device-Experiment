@@ -1,0 +1,87 @@
+\documentclass[lang=cn,11pt,a4paper,cite=authoryear]{elegantpaper}
+
+\input{needed.tex}
+
+\title{微电子器件实验\quad xxxxxxxx}
+\author{范云潜， 学号：18373486，搭档：徐靖涵，教师：彭守仲}
+\institute{微电子学院 184111 班}
+\date{\zhtoday}
+
+\begin{document}
+
+\maketitle
+
+% \tableofcontents
+
+\section{实验目的}
+
+\section{实验所用设备及器件}
+
+\section{实验基本原理及步骤}
+
+
+\subsection{BJT 双极型晶体管测量}
+
+曲线测量涉及到多个点的数据，因此不可避免的使用到循环结构。本次实验中，所有电压设置为等间距采样，同时除去扫描电压外，还需对基极偏置进行调整，这对应另一层循环。大体流程可以写成如~算法\ref{alg:B}的伪代码，并将其转换成如\figref{l3d}的流程图，其前面板如\figref{l3p}，得到结果如\figref{l3p}，可以看到与之前实验结果符合较好。
+
+\qfig[l3d]{lab3d.png}{BJT 测量电路后面板}
+
+\qfig[l3p]{lab3p.png}{BJT 测量电路前面板}
+
+% \qfig[l3a]{lab3a.png}{BJT 测量结果}
+
+\begin{algorithm}
+    \caption{BJT 特性曲线测量流程}
+    \label{alg:B}
+    \begin{algorithmic}
+        \STATE{set minVc, stepVc, maxVc} 
+        \STATE{set minVb, stepVb, maxVb} 
+        \STATE{get \# stepC = (maxVc - minVc) / stepVc}
+        \STATE{get \# stepB = (maxVb - minVb) / stepVb}
+        \STATE{set i = 0, j = 0}
+        \STATE{set Vc, Ic as array2d}
+        \STATE{set Vct, Ict as array}
+            \REPEAT
+                \STATE{VoutB = i * stepVb + minVb}
+                \STATE{i += 1}
+                \STATE{set VoutB to 2231A}
+                \REPEAT 
+                    \STATE{VoutC = j * stepVc + minVc}
+                    \STATE{set VoutC to 2231A}
+                    \STATE{get Iout from DMM6500}
+                    \STATE{Vct = [Vct, VoutC]}
+                    \STATE{Ict = [Ict, Iout]}
+                    \STATE{j += 1}
+                    \UNTIL{j = \# stepC}
+                \STATE{Vc = [Vc, Vct]}
+                \STATE{Ic = [Ic, Ict]}
+                \STATE{set filename = 'data\_ new\_ ' + num2string(i) + '.txt'} 
+                \STATE{open file = filename}
+                \STATE{set title = 'VC(V)             IC(A)' + newline()}
+                \STATE{write title to file}
+                \STATE{set j = 0}
+                    \REPEAT
+                        \STATE{set toWrite = num2string(Vct[j]) + ' ' + num2string(Ict[j]) + newline()}
+                        \STATE{write toWrite to file}
+                        \STATE{j += 1}
+                    \UNTIL{j = \# stepC}
+                \STATE{clear Ict, Vct}
+                \STATE{close file}
+        \UNTIL{i == \# stepB }
+        \STATE{get graph of [Vc, Ic]}
+    \end{algorithmic}
+\end{algorithm}
+
+
+
+\section{实验数据记录}
+
+\section{实验结果分析}
+
+\section{总结与思考}
+
+% Start Here
+
+% End Here
+
+\end{document}

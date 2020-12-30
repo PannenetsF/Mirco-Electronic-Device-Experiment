@@ -1,0 +1,92 @@
+\documentclass[lang=cn,11pt,a4paper,cite=authoryear]{elegantpaper}
+
+\input{needed.tex}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\title{微电子器件实验\quad LabVIEW 简单使用}
+\author{范云潜， 学号：18373486，搭档：徐靖涵，教师：彭守仲}
+\institute{微电子学院 184111 班}
+\date{\zhtoday}
+
+\begin{document}
+
+\maketitle
+
+% \tableofcontents
+
+\section{实验目的}
+
+利用 LabVIEW 软件对 LED 发光二极管、BJT 双极型晶体管等进行自动的直流电流-电压特性测量，了解在实际实验中电子元器件的电学测量自动化方法，并且掌握基本的自动化测试方法。
+
+\section{实验所用设备、器件及软件}
+
+
+主要设备有：电压源，台式万用表，相关线缆等，主要器件有发光二极管，软件为 LabVIEW 2020。
+
+\section{实验步骤以及设计方法}
+
+\subsection{虚拟仪器 VI 的概念}
+
+目前主流仪器均设置了标准较为统一的电脑控制接口，而 LabVIEW 就是一种可以对这类接口进行可视化编程的软件，通过仪器硬件设备在电脑端的抽象，操作人员在程序完成后就可以通过电脑显示的虚拟仪器对外部仪表进行操控、数据设置、数据读取等操作，大大简化了机械性较高的测量工作，并且提供较为方便的测量逻辑设计以及数据处理能力。
+
+\subsection{LED 发光二极管测量}
+
+在进行测试时需要明确加压与测流的顺序，只有加压后才可以进行测流，因此需要用到 Frame 进行顺序控制。 
+
+\subsubsection{电阻测量}
+
+电阻测量较为简单，通过前面板设置电压源的通道、电压，万用表测量模式后，添加一个 Indicator ，在其后面板上连接一个除法器的 x/y 端， x 端连接到电压源的输出， y 端连接到万用表的读数即可。其后面板如 \figref{ld} ， 前面板如 \figref{lp} ，在 \(2.5 V\) 电压下，电阻为 \(99.8 \Omega\)。
+
+
+\qfig[ld]{labd.png}{LED 电阻测量电路后面板}
+
+\qfig[lp]{labp.png}{LED 电阻测量电路前面板}
+
+
+\subsubsection{LED 特性曲线测量}
+
+曲线测量涉及到多个点的数据，因此不可避免的使用到循环结构。本次实验中，所有电压设置为等间距采样。大体流程可以写成如~算法\ref{alg:A}的伪代码，并将其转换成如\figref{l2d}的流程图，其前面板如\figref{l2p}，得到结果如\figref{l2a}，可以看到与之前实验结果符合较好。
+
+
+
+\qfig[l2d]{lab2d.png}{LED 测量电路后面板}
+
+\qfig[l2p]{lab2p.png}{LED 测量电路前面板}
+
+\qfig[l2a]{lab2a.png}{LED 测量结果}
+
+\begin{algorithm}
+    \caption{LED 特性曲线测量流程}
+    \label{alg:A}
+    \begin{algorithmic}
+        \STATE{set minV, stepV, maxV} 
+        \STATE{get \# step = (maxV - minV) / stepV}
+        \STATE{set i = 0}
+        \STATE{set V, I as array}
+        \REPEAT
+            \STATE{Vout = i * stepV + minV}
+            \STATE{i += 1}
+            \STATE{set Vout to 2231A}
+            \STATE{get Iout from DMM6500}
+            \STATE{V = [V, Vout]}
+            \STATE{I = [I, Iout]}
+        \UNTIL{i == \# step}
+        \STATE{get graph of [V, I]}
+    \end{algorithmic}
+\end{algorithm}
+
+
+\section{总结与思考}
+
+遇到的问题有：
+
+\begin{itemize}
+    \item 执行顺序问题：实际上 LabVIEW 执行是并行处理的，因此如果加压、测量不分块，会出现电流表测量电流时，电压未加入的情况。
+    \item 如何遍历数组：实际上可以将数组的对应 Local Varible 接线到 For Loop 中，但是实验时对此不清楚，使用的遍历是通过 i 进行计算的。
+\end{itemize}
+
+% Start Here
+
+% End Here
+
+\end{document}
